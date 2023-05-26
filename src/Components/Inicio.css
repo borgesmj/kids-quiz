@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+
+#container{
+    /* background-image: url(src/IMG/background-pencil.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header{
+        /* position: absolute; */
+        width: 326px;
+        height: 119px;
+        left: calc(50% - 326px/2 + 3.5px);
+        top: calc(50% - 119px/2 - 223px);
+        font-family: 'Sedgwick Ave Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 125px;
+        text-align: center;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: #B3E5FC;
+        text-shadow: -5px 10px 6px rgba(0, 0, 0, 0.5);
+        -webkit-text-stroke: 2px #CB9A6C;
+}
+
+#button-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+#panel-kids{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 186px;
+    height: 93px;
+    left: calc(50% - 186px/2 - 0.5px);
+    top: calc(50% - 93px/2 + 46px);
+    border: 1px solid #A88D8D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-family: 'Advent Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 44px;
+    text-align: center;
+    margin: 10px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    color:white;
+    border: white;
+}
+
+.button-kid{
+    background: #C1FCB3;
+}
+
+.button-admin{
+    background: #FFF59D;
+    
+}
+
+img{
+width: 295px;
+height: 192px;
+left: 34px;
+top: 462px;
+filter: drop-shadow(-20px 20px 6px rgba(0, 0, 0, 0.25));
+}
+
+@media (min-width: 768px) { 
+    #button-panel{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header{
+        font-size: 158px;
+    }
+
+    button{
+        width: 230px;
+        height: 120px;
+    }
+    img{
+        width: 445px;
+        height: 285px;
+    }
+ }
+
+ @media (min-width: 1280px) { 
+    header{
+        margin-top: 30px;
+    }
+  }
