@@ -1,19 +1,24 @@
 import React from 'react'
-import './Inicio.css'
 
 
-const Inicio = () => {
+
+const Inicio = ({cerrarInicio}) => {
+
+  const handleClick = (e) =>{
+    e.preventDefault();
+    cerrarInicio()
+  }
+
   return (
-    <div id="container">
+    <div id="inicio">
       <header>Hola</header>
-      <div id="button-panel">
-        <div id="panel-kids">
-            <button className="button-kid">Samantha</button>
-        </div>
-        <button className='button-admin'>Mamá/Papá</button>
+      <div className='BtnPanel'>
+        <button className='btn1'>Samantha</button>
+        <button 
+            className='btn2'
+            onClick={handleClick}
+            >Mamá/Papá</button>
       </div>
-      <img src='src/IMG/cuteanimated_kid.png' alt="jjj" />
-      <div id="img"></div>
     </div>
   )
 }
